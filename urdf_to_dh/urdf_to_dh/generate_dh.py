@@ -177,7 +177,21 @@ class GenerateDhParams(rclpy.node.Node):
         print("\nDH Parameters: (markdown)")
         print(pd_frame.to_markdown())
 
-
+        #==========#
+        # save2txt
+        #==========#
+        idx = self.urdf_file.rindex('/')
+        
+        dh_txtfile = self.urdf_file[idx+1:-6]
+        path = "/home/iclab/work/ros2_urdf_to_dh_parameters/urdf_to_dh/robot_dh/"+dh_txtfile+'_dh.txt'
+        f = open(path, 'w')
+        f.write("\nDH Parameters: (csv)")
+        f.write(pd_frame.to_csv())
+        f.write("\nDH Parameters: (markdown)")
+        f.write(pd_frame.to_markdown())
+        f.close()
+        
+        print('dh_table saved: ', path)#self.urdf_file[idx+1:-6])
 
     def get_joint_dh_params(self, rel_link_frame, axis):
         dh_params = np.zeros(4)
