@@ -58,6 +58,10 @@ class GenerateDhParams(rclpy.node.Node):
     def parse_urdf(self):
         # Get the root of the URDF and extract all of the joints
         urdf_root = uh.get_urdf_root(self.urdf_file)
+        print(type(urdf_root)) #<class 'xml.etree.ElementTree.Element'>
+        print("tag:", urdf_root.tag) #robot
+        for child in urdf_root:
+            print(child.tag, child.attrib)
 
         # Parse all links first and add to tree
         for child in urdf_root:

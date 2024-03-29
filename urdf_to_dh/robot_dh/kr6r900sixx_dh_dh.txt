@@ -1,0 +1,23 @@
+
+DH Parameters: (csv),joint,parent,child,d,theta,r,alpha
+0,joint_a1,base_link,link_1,0.4,0.0,0.0,0.0
+1,base_link-base,base_link,base,0.0,90.0002104591497,0.0,90.0002104591497
+2,joint_a2,link_1,link_2,0.0,0.0,0.025,-90.0002104591497
+3,joint_a3,link_2,link_3,0.0,0.0,0.455,0.0
+4,joint_a4,link_3,link_4,0.0,-90.0002104591497,0.035,90.0002104591497
+5,joint_a5,link_4,link_5,-0.42,-0.0,0.0,-90.0002104591497
+6,joint_a6,link_5,link_6,0.0,0.0,0.0,90.0002104591497
+7,joint_a6-flange,link_6,flange,-0.08,0.0,0.0,0.0
+8,flange-tool0,flange,tool0,0.0,-90.0002104591497,0.0,90.0002104591497
+
+DH Parameters: (markdown)|    | joint           | parent    | child   |     d |    theta |     r |    alpha |
+|---:|:----------------|:----------|:--------|------:|---------:|------:|---------:|
+|  0 | joint_a1        | base_link | link_1  |  0.4  |   0      | 0     |   0      |
+|  1 | base_link-base  | base_link | base    |  0    |  90.0002 | 0     |  90.0002 |
+|  2 | joint_a2        | link_1    | link_2  |  0    |   0      | 0.025 | -90.0002 |
+|  3 | joint_a3        | link_2    | link_3  |  0    |   0      | 0.455 |   0      |
+|  4 | joint_a4        | link_3    | link_4  |  0    | -90.0002 | 0.035 |  90.0002 |
+|  5 | joint_a5        | link_4    | link_5  | -0.42 |  -0      | 0     | -90.0002 |
+|  6 | joint_a6        | link_5    | link_6  |  0    |   0      | 0     |  90.0002 |
+|  7 | joint_a6-flange | link_6    | flange  | -0.08 |   0      | 0     |   0      |
+|  8 | flange-tool0    | flange    | tool0   |  0    | -90.0002 | 0     |  90.0002 |

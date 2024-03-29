@@ -1,0 +1,23 @@
+
+DH Parameters: (csv),joint,parent,child,d,theta,r,alpha
+0,fixed1,world,base_link,0.0,90.0002104591497,0.0,90.0002104591497
+1,joint_right,base_link,slide_right,-0.2,0.0,0.0765,-90.0002104591497
+2,r_fixed,slide_right,r_base,1.1815,0.0,0.0,90.0002104591497
+3,r_joint_1,r_base,r_link_1,0.0,-0.0,0.0,-90.0002104591497
+4,r_joint_2,r_link_1,r_link_2,0.055,-0.0,0.0,-90.0002104591497
+5,r_joint_3,r_link_2,r_link_3,-0.0,90.0002104591497,0.0,90.0002104591497
+6,r_joint_4,r_link_3,r_link_4,0.29,-0.0,0.03,-90.0002104591497
+7,r_joint_5,r_link_4,r_link_5,0.0,179.99984796050427,0.03,-90.0002104591497
+8,r_joint_6,r_link_5,r_link_6,0.27,0.0,0.0,90.0002104591497
+
+DH Parameters: (markdown)|    | joint       | parent      | child       |       d |    theta |      r |    alpha |
+|---:|:------------|:------------|:------------|--------:|---------:|-------:|---------:|
+|  0 | fixed1      | world       | base_link   |  0      |  90.0002 | 0      |  90.0002 |
+|  1 | joint_right | base_link   | slide_right | -0.2    |   0      | 0.0765 | -90.0002 |
+|  2 | r_fixed     | slide_right | r_base      |  1.1815 |   0      | 0      |  90.0002 |
+|  3 | r_joint_1   | r_base      | r_link_1    |  0      |  -0      | 0      | -90.0002 |
+|  4 | r_joint_2   | r_link_1    | r_link_2    |  0.055  |  -0      | 0      | -90.0002 |
+|  5 | r_joint_3   | r_link_2    | r_link_3    | -0      |  90.0002 | 0      |  90.0002 |
+|  6 | r_joint_4   | r_link_3    | r_link_4    |  0.29   |  -0      | 0.03   | -90.0002 |
+|  7 | r_joint_5   | r_link_4    | r_link_5    |  0      | 180      | 0.03   | -90.0002 |
+|  8 | r_joint_6   | r_link_5    | r_link_6    |  0.27   |   0      | 0      |  90.0002 |
